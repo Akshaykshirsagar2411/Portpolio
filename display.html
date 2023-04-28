@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <script src="jquery.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="sub1">
+                <h2>p1</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem provident architecto aperiam itaque hic facere accusantium corrupti magni maiores asperiores, magnam ad perferendis eos earum quaerat, velit officia eveniet. Iusto cupiditate aut, dignissimos perspiciatis quo sunt consectetur fugit atque accusamus minus dicta ipsum, similique laborum veritatis. Recusandae earum rem dolores voluptatem maiores reiciendis laborum neque, iste laboriosam distinctio, deserunt nulla quod. Perspiciatis ab tempora eveniet minus recusandae ipsa repellat quam numquam rem? Maiores perferendis, inventore, nisi minima vero perspiciatis repellat ullam dolore laborum voluptates sed quae repellendus, enim quis quam. Ullam quas porro quod molestias placeat quam eius mollitia velit.\</p>
+            </div>
+            <div class="sub2">
+                <h2>p2</h2>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere et reprehenderit voluptatum, repudiandae alias fugit dolore repellat quisquam voluptates quia assumenda voluptas, corporis reiciendis veniam quasi, fugiat quas ullam. Facilis repellendus aliquid minima fugit nostrum cupiditate voluptatum soluta in dignissimos, aspernatur maiores repudiandae minus odit laboriosam? Modi maxime, nulla fugit cupiditate deserunt, aut soluta eligendi impedit expedita repudiandae, sequi corrupti minima voluptates dignissimos aperiam asperiores odio ab maiores aliquid culpa! Cumque autem dicta quia suscipit praesentium cum qui! Est veniam assumenda, modi blanditiis vero nobis repellat omnis nulla, ab consequatur nesciunt veritatis. Pariatur, harum atque. Quae sunt nulla exercitationem qui!</p>
+            </div>
+    
+        </div>
+        <button id="btn">Hide</button>
+        <button id="btn2">hide1</button>
+    
+    
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+         #main{
+            width: 100%;
+            height: 600px;
+           float: left;
+            /* border: 1px solid black; */
+         }
+         .sub1{
+            border: 1px solid black;
+            width: 100%;
+            height: 200px; 
+            display: none;
+            
+         }
+         
+         .sub2{
+            border: 1px solid black;
+            width: 100%;
+            height: 200px; 
+           
+         }
+        </style>
+    
+        <script>
+    
+            
+    
+    $(document).ready(function(){
+         $("#btn").click(function(){
+             $(".sub1").show();
+         });
+        });
+    
+    
+    
+        $(document).ready(function(){
+         $("#btn2").click(function(){
+             $(".sub2").hide();
+         });
+        });
+        </script>
+    </body>
+    </html> 
+</body>
+</html>

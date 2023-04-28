@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Bill.css">
+    <script src="jquery.js"></script>
+    <title>Bill  Generator</title>
+</head>
+<body>
+   
+    <div id="main">
+        
+        <div id="form1">
+          
+        <form id="info1">
+            <h2>Hotel Green park</h2><br>
+            <h3>Personal Information</h3><br>
+         <h3> Full Name:  </h3>  <input type="text" id="name" ><br>
+          
+          <h3>Your Number: </h3> <input type="number" id="email">
+        </form>
+    
+          <br><hr><br>
+          
+          
+     
+          
+            <form id="info2">
+                <h3>Your Orders</h3><br>
+                <h3>Samosa(Rs :10)</h3> <input type="text" id="samosa"><br>
+    
+               <h3> Kachori(Rs. 10)</h3> <input type="text" id="kachori"><br>
+                
+                <h3>Vadapav(Rs :10) </h3><input type="text" id="vadapav" ><br>
+    
+             <h3>   Maggi(Rs :10) </h3>  <input type="text" id="maggi"><br><br>
+             <button type="button" id="done" class="btn">done</button>
+
+    
+          
+
+            </form>
+            
+        </div>
+
+       
+
+
+        <div id="form2">
+            <div id="bill">
+                <h2>Hotel Green park</h2><br>
+                    <h3>Reciept</h3>
+                    <br><hr><br>
+                <h3>Your Name: <span id="name2"></span> </h3>
+    
+              <h3>Number: <span id="email2"></span> </h3><br>
+    
+                <table border="1" align="center">
+                    <thead>
+                    <tr><th>Menu</th><th>Price</th><th>Quantity</th><th>Amount</th></tr>
+                    </thead>
+
+                    <tbody id="bills"></tbody>
+                      
+                
+                
+                   
+                </table>
+               <br> <h3>Total Amount: Rs.<span id="amount"></span></h3><br>
+               
+
+                <button type="button"  class="btn" onclick="print()" >Print</button>
+              
+            </div>
+
+
+
+        </div>
+
+
+
+       <table>
+        
+       </table>
+       
+
+
+    </div>
+
+
+
+    <script src="Bill.js" >
+      
+    </script>
+
+</body>
+</html>

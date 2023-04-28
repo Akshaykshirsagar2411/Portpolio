@@ -1,0 +1,922 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+#home{
+    width: 100%;
+
+    height:750px;
+    border: 1px solid black;
+   background-image:url(img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;   
+   
+}
+.nav, .logo{
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    float: left;
+}
+
+.logo{
+    width: 30%;
+  
+
+}
+.logo h1{
+    
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 60px;
+}
+.logo span{
+    color: red;
+    
+}
+.nav{
+    width: 70%;
+    display: flex;
+
+}
+.nav li{
+    display: flex;
+    float: left;
+    text-decoration: none;
+    margin-left: 100px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    justify-content: space-evenly;
+    margin-top: 50px;
+    text-shadow: red;
+    border-bottom: 2px solid red;
+    border-left:   2px solid red;
+    border-right:  2px solid red;
+}
+.nav li a{
+    text-decoration: none;
+    font-size: 25px;
+    
+    font-size: 30px;
+    color: white;
+}
+
+.title{
+    width: 100%;
+    height: 700px;
+   
+ 
+    /* border: 1px solid black; */
+}
+#details,.sub{
+    float: left;
+    
+}
+
+#details{
+    width: 20%;
+    margin-left: 20%;
+    margin-top: 200px;
+    /* height: 350px; */
+    border-radius: 10px;
+    text-align: center;
+}
+#detailsub{
+    display: none;
+    background-color: rebeccapurple;
+    padding-bottom: 7%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+#details button{
+    font-size: 25px;
+    margin-top: 5%;
+    padding: 5px;
+    border-radius: 10px;
+   
+    background-color: black;
+    color: #fff;
+    box-shadow: inset;
+    border-bottom: 2px solid red;
+    border-left:   2px solid red;
+    border-right:  2px solid red;
+}
+#details a{
+    text-decoration: none;
+    color: #fff;
+}
+.title .sub{
+    border: 2px solid black;
+   margin-top: 200px;
+   align-items: center;
+   width: 40%;
+   margin-left: 100px;
+   padding: 50px;
+   border-radius: 10px;
+   background-color:rgb(238, 164, 26);
+}
+
+
+@media(max-width:480px){
+    
+    #main{
+      width: 100%;
+    }
+    #details{
+        margin-top: 5%;
+        width: 60%;
+        height: auto;
+        font-size: 15px;
+        padding-bottom: 4%;
+    }
+    #details button {
+       
+        font-size: 15px;
+        
+    }
+
+    .logo h1{
+        margin-left: 10px;
+    }
+    .nav ,.logo{
+        width: 100%;
+      
+    }
+    .nav li{
+        margin-left: 15px;
+        margin-top: 0px;
+        padding-left: 0px;
+    padding-right: 0px;
+      
+       
+    }
+    .nav li a{
+        font-size: 15px;
+      
+    }
+    .title .sub{
+        margin-left: 0px;
+        padding: 10px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 100px;
+        
+    } 
+    .title .sub h1{
+        font-size: 20px;
+    } 
+    #home img{
+        height: auto;
+        width: auto;
+    }
+
+    
+    }
+    @media(max-width:980px){
+        .nav li{
+        margin-left: 8px;
+       
+    } 
+    #details button{
+        font-size: 20px;
+    }
+
+    }
+
+    /* About Me */
+
+    #about{
+        width: 100%;
+        background-color:black ;
+
+    height:800px;
+   
+
+
+    }
+
+.img, .info{
+  
+    float: left;
+     height: 700px;
+     background-color: black;
+}
+.img img{
+     width: 60%;
+    height:70% ;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 7%;
+    margin-left: 20%;
+   
+}
+.img{
+    width: 50%;
+    color: white;
+    
+    /* height: 800px; */
+    
+   
+}
+.img h1{
+    margin-top: 7%;
+    margin-left: 40%;
+}
+.info{
+    width: 50%;
+}
+
+.card{
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: ;
+}
+.info{
+   
+}
+.info-sub{
+   
+    width: 80%;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 0%;
+    height: auto;
+}
+.card p{
+    font-size: 20px;
+    color:#fff;
+}
+.info h1{
+    color: red;
+}
+.card h2,h3{
+    color: rgb(184, 241, 69);
+}
+
+@media(max-width:480px){
+    #about{
+        background-color: black;
+    }
+    .img{
+        
+
+    }
+    .img img{
+        /* width: 100%; */
+        height: auto;
+        margin-top: 1%;
+        margin-left: 20%;
+        
+
+    }
+    .img h1{
+        margin-left: 27%;
+        margin-top: 0%;
+    }
+    .img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        
+    }
+    .img, .info{
+        height: 400px;
+       width: 100%;
+    }
+    .card{
+        height: auto;
+        /* color: black; */
+
+    }
+    .card h1,h2{
+        font-size: 20px;
+    }
+    .info-sub{
+        margin-top: 2%;
+        margin-left: 0px;
+        margin-bottom: 40px;
+
+    }
+      #about{
+        height: auto;
+        /* background-color: black; */
+      }
+      .info{
+        height: auto;
+      }
+}
+
+@media(max-width:980px){
+   
+   .info-sub{
+    width: 100%;
+    margin-top: 6%;
+   }
+}
+
+
+
+
+/* Project */
+
+#project{
+
+
+    width: 100%;
+background-color:transparent;
+
+    height:800px;
+   /* border: 10px solid black; */
+   clear: left;
+   
+ 
+}
+.card1{
+    height: 280px;
+    width: 25%;
+    
+    float: left;
+    margin: 1%;
+    margin-left: 6%;
+    margin-top:3%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(29, 206, 222);
+ 
+
+}
+.card1 p{
+    text-align: justify;
+    color: black;
+}
+.card1 a{
+    text-decoration: none;
+    color: #fff;
+}
+#project-h1{
+    margin-left: 43.5%;
+    margin-top: 3%;
+    font-size: 50px;
+   
+}
+#project1 h2{
+/*     
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    padding: 0px; */
+   
+}
+#project1{
+    margin-top: px;
+    height:800px;
+    width: 86%;
+    margin-left:7%;
+    margin-right: 7%;
+    /* border: 3px solid rebeccapurple; */
+    /* border: 1px solid black; */
+    /* background-color: rebeccapurple; */
+    
+}
+.btn{
+    margin-top: 3%;
+    padding: 10px; 
+    padding-left: 15%;
+ padding-right: 15%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+     margin-left: 15%;
+     margin-top: 10%;
+     font-size: 20px;
+}
+
+
+@media(max-width:480px){
+    #project{
+         /* margin-top: 1100px;
+      margin-bottom: 0px;
+          */
+        /* height: auto; */
+    }
+    .card1{
+        width: 100%;
+        padding: 10px;
+        margin-left: 0%;
+      
+        
+
+    }
+    .card1 p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .btn{
+        /* background-color:rebeccapurple;
+        margin-left: 50%;
+        padding-left: 20%;
+        padding-right: 20%;
+        /* margin-right: 30%; */
+        /* text-align: center;
+        font-size: 30px; */ 
+        /* margin-left: 50%; */
+        
+        padding-left: 25%;
+        padding-right:25%;
+        font-size: 25px;
+        margin-top: 3%;
+    }
+    #project-h1{
+        margin-left: 18%;
+    }
+}
+
+@media(max-width:980px){
+    .card1{
+        
+        padding: 10px;
+        font-size: 13px;
+    }
+    .card1 .btn{
+        margin-left: 10%;
+    }
+    .btn{
+        font-size: 17px;
+        margin-left: 0%;
+    }
+    .card1 p{
+        text-align: justify;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* skill2 */
+#skills{
+    width: 100%;
+background-color:transparent;
+
+    height:850px;
+   border: 2px solid black; 
+   clear:left;
+   background-color: black;
+
+ 
+ 
+
+}
+#skbtn{
+   
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 4%;
+ 
+   
+}
+#skbtn h1{
+    color: #fff;
+}
+#skbtn button{
+    background-color: black;
+    border: 1px solid red;
+   padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 7%;
+    color: #fff;
+   
+}
+#sk1{
+    border:  3px solid red;
+    height: 450px;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 6%;
+    border-radius: 30px;
+   background-color: #fff;
+}
+#sk2,#sk3{
+    display: none;
+}
+
+#sk2{
+    border:  1px solid red;
+    height: 450px;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 6%;
+    border-radius: 30px; 
+    background-color: #fff; 
+    
+}
+#sk3{
+    border:  1px solid red;
+    height: 450px;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 6%;
+    border-radius: 30px; 
+    background-color: #fff; 
+}
+
+
+#skills #img1 img{
+    width: 150px;
+    height: 150px;
+    margin-top: 12%;
+    margin-left: 6%;
+    
+    
+
+}
+#skills #img2 img{
+    width: 150px;
+    height: 150px;
+    margin-top: 12%;
+    margin-left: 6%;
+    
+}
+#skills #img3 img{
+    width: 150px;
+    height: 150px;
+    margin-top: 12%;
+    margin-left: 6%;
+    
+}
+
+@media(max-width:480px){
+
+ #skbtn{
+    margin-left: 0%;
+    width: 100%;
+ }   
+#skills #skbtn button{
+   
+     font-size: 15px;
+    
+}
+#skills #img1 img{
+    width: 100px;
+    height: 100px;
+  
+    
+}
+#skills #img2 img{
+    width: 100px;
+    height: 100px;
+  
+}
+#skills #img3 img{
+    width: 100px;
+    height: 100px;
+  
+    
+}
+
+#sk1{
+    height: auto;
+     margin-left: 0%;
+    margin-left: 8%; 
+   
+    width: 84%;   
+}
+#sk2{
+    height: auto;
+     margin-left: 0%;
+    margin-left: 8%; 
+   
+    width: 84%;   
+}
+#sk3{
+    height: auto;
+     margin-left: 0%;
+    margin-left: 8%; 
+   
+    width: 84%;   
+}
+#sk1,#sk2,#sk3{
+    margin-top: 8%;
+}
+
+
+
+/* #bt1,#bt2,#bt3{
+  
+     
+}
+#sk1,#sk2,#sk3{
+    height: auto;
+    margin-left: 0%;
+    margin-left: 0%;
+    
+}
+#skills #img1 img{
+    background-color: rebeccapurple;
+    margin-left: 22%;
+}
+#skills #img2 img{
+    
+    margin-left: 22%;
+}
+#skills #img3 img{
+    margin-left: 20%;
+} */
+}
+
+ @media(max-width:980px){
+    
+    #skbtn button{
+        font-size: 25px;
+        
+    }
+
+    #skills #img1 img{
+        margin-top: 25%;
+    }
+    #skills #img2 img{
+        margin-top: 25%;  
+        
+    }
+    #skills #img3 img{
+        margin-top: 25%;
+    }
+
+
+    /* #bt1,#bt2,#bt3{
+        margin-top: 5%;
+        padding-left: 35px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+       margin-left: 8%;
+       font-size: 25px;
+    }
+    #sk-btn{
+        margin-left: 0%;
+        margin-left: 8%;
+        width: 100%;
+    }
+    #sk1,#sk2,#sk3{
+     
+      margin-top: 5%;
+      margin-left: 8%;
+      margin-right: 8%;
+
+    } */
+} 
+
+
+
+/* Contacts */
+#contacts{
+    width: 100%;
+background-color:transparent;
+
+    height:750px;
+   border: 2px solid black; 
+   background-image: url(city3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.cot-2{
+    
+}
+
+ .contact-main{
+    height: 90%;
+   margin-top: 5%;
+   padding-bottom:;
+   
+}
+
+.cot-1{
+    text-align: center;
+    color: #fff;
+
+  
+}
+
+.cot-1 p{
+    font-size: 20px;
+}
+.cot-2{
+border: 2px solid #fff;
+margin-top: 5%;
+width: 80%;
+margin-left: 10%;
+height: 70%;
+padding: 2%;
+border-radius: 5px;
+
+
+}
+
+.colom1{
+  
+   float: left;
+    width: 40%;
+    border:2px solid black;
+    
+    margin-left: 6%;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 1%;
+    color: #fff ;
+    border-radius: 10px;
+    
+}
+.colom1 p{
+    background-color: black;
+    border-radius: 10px;
+    padding-left: 10px;
+
+}
+
+.colom2{
+    
+    width: 40%;
+    float: left;
+    border: 2px solid red;
+    height: auto;
+    margin-left: 10%;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 3%;
+    color: #fff;
+
+}
+
+.colom2 .input , textarea{
+   width: 100%;
+   padding: 3%;
+   margin-top: 3%;
+}
+textarea{
+    font-size: 16px;
+    outline:none;
+    border: none;
+    margin-top: 7%;
+    
+   border: 3px solid lightgrey;
+   border-radius: 5px;
+   
+}
+
+#send{
+    margin-top: 3%;
+   padding: 10px; 
+   padding-left: 15%;
+padding-right: 15%;
+   text-align: center;
+   border-radius: 5px;
+   background-color: black;
+   color: #fff;
+   outline: none;
+   border: none;
+   border-bottom: 3px solid red;
+   border-left: 3px solid red;
+   border-right: 3px solid red;
+}
+
+.cot-2 p{
+    font-size: 21px;
+}
+
+input{
+    outline: none;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0.5em;
+  justify-content: space-around;
+  font-size: 17px;
+  background-color: transparent;
+  color: #fff;
+}
+
+
+.cot-2 span{
+    color: yellow;
+}
+
+
+@media(max-width:480px){
+    
+    .colom1{
+      
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 40px;
+        padding: 0;
+       
+       
+
+    }
+    .cot-1 p{
+        text-align: center;
+    }
+    .cot-2 p{
+       
+       
+    } 
+    .colom2{
+       
+        width: 100%;
+        margin-left: 0%;
+    }
+    #contacts{
+        height: 980px;
+        clear: left;
+    }
+    .cot-2{
+       border: none;
+        height: 90%;
+    }
+    .colom1, .colom2{
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid red;
+        padding: 5%;
+    }
+    .cot-2 span{
+      color: yellow;
+    }
+    input,textarea{
+        background-color: transparent;
+        color: #fff;
+
+    }
+    textarea
+    {
+        margin-top: 0%;
+       
+    }
+    .contact-main{
+        margin-top: 0%;
+    }
+} 
+
+
+@media(max-width:980px){
+    
+    .colom2{
+        margin-top: 3%;
+    }
+    .colom1 p{
+        font-size: 19px;
+       
+    }
+     input{
+     margin-top: 30%;  
+  
+    }
+    textarea{
+        
+        margin-top: 20%;
+    }
+}

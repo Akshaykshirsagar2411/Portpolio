@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="main">
+    <div id="card1">
+        <h1>Paragrapg1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, tempore. Ipsum dolore nobis vero quisquam aperiam error eligendi, maiores, quibusdam nemo, nisi officia accusantium consequatur. Blanditiis, id optio sapiente beatae quod deleniti ea minima delectus, rerum, nihil excepturi nobis in laudantium soluta vero illum quas similique ullam incidunt reprehenderit perspiciatis.</p>
+       </div> 
+       <div id="card2">
+        <h1>Paragrapg2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, tempore. Ipsum dolore nobis vero quisquam aperiam error eligendi, maiores, quibusdam nemo, nisi officia accusantium consequatur. Blanditiis, id optio sapiente beatae quod deleniti ea minima delectus, rerum, nihil excepturi nobis in laudantium soluta vero illum quas similique ullam incidunt reprehenderit perspiciatis.</p>
+       </div> 
+    </body>
+    <div id="card3">
+        <h1>Paragrapg3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, tempore. Ipsum dolore nobis vero quisquam aperiam error eligendi, maiores, quibusdam nemo, nisi officia accusantium consequatur. Blanditiis, id optio sapiente beatae quod deleniti ea minima delectus, rerum, nihil excepturi nobis in laudantium soluta vero illum quas similique ullam incidunt reprehenderit perspiciatis.</p>
+       </div>
+       <button id="btn1" onclick="click1()">div1</button> 
+       <button id="btn2" onclick="click2()">div2</button> 
+       <button id="btn3" onclick="click3()">div3</button> 
+   </div>
+
+
+   <style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #main{
+        height: 800px;
+
+    }
+    #main div{
+   
+   border: 1px solid black;
+   margin: 2%;
+    }
+    #card1{
+       
+        height: 600px;
+        background-color: rebeccapurple;
+    }
+    #card2,#card3{
+        display: none;
+        height: 600px;
+    }
+
+
+   </style>
+   <script>
+
+function click1(){
+            document.getElementById('card1').style.display="block";
+            document.getElementById('card2').style.display="none";
+            document.getElementById('card3').style.display="none";
+            document.getElementById('card1').style.height="400px";
+            
+        }
+
+        function click2(){
+            document.getElementById('card2').style.display="block";
+            document.getElementById('card1').style.display="none";
+            document.getElementById('card3').style.display="none";
+        }
+        function click3(){
+            document.getElementById('card3').style.display="block";
+            document.getElementById('card1').style.display="none";
+            document.getElementById('card2').style.display="none";
+        }
+
+
+
+   </script>
+</body>
+</body>
+</html>

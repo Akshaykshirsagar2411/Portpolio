@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-speech</title>
+    <!-- <link rel="stylesheet" href="/style.css"/> -->
+</head>
+<body>
+    
+    <div class="wraper">
+        <header >Text To Speech</header>
+       
+        <form action="#"> 
+            <div class="row">
+               <label class="font-size"> Enter Text</label>
+                <textarea></textarea>
+            </div>
+            <div class="row">
+                <label class="font-size" id="select-btn">Select Voice</label>
+
+                <div class="outer">
+                    <select class="select" id="select"> 
+                        <option value="">Google hindi</option>
+                        <option value="">Google Deutsh </option>
+                        <option value="">Google US English</option>
+                        <option value="">Google UK English male</option>
+                        <option value="">Google UK English Female</option>
+                       
+                    </select>
+
+                </div>
+            </div>
+            <button  id="btn">Convert to speech</button>
+
+        </form>
+    </div>
+    <script src="/script.js"></script>
+
+
+
+
+    <!-- javascript -->
+
+  <script>  
+const textarea = document.querySelector("textarea"),
+voicelist = document.querySelector("select"),
+speechBtn = document.querySelector("button");
+
+let synth =speechSynthesis;
+isSpeaking = true;
+
+
+
+function voices(){
+    for(let voice of synth.getVoices())
+    {
+        
+        // console.log(voice);
+        // let option =  `(<option value="${voice.name}">${voice.name} (${voice.name})</option>`;
+        voicelist.insertAdjacentHTML("beforeend", option);
+    }
+   
+
+}
+
+synth.addEventListener("voiceschanged",voices);
+
+
+
+function textToSpeech(text){
+    let utternance = new SpeechSynthesisUtterance(text);
+    for(let voice of synth.getVoices()){
+        if(voice.name == voicelist.value)
+        {
+            utternance.voice = voice;
+        }
+    }
+    speechSynthesis.speak(utternance);
+
+}
+
+speechBtn.addEventListener("click", e => {
+    e.preventDefault();
+    if(textarea.value !== "")
+    {
+        if(!synth.speaking){
+            textToSpeech(textarea.value);
+        }
+        if(textarea.value.length > 5)
+        {
+            if(isSpeaking){
+                synth.resume();
+                isSpeaking = false;
+                speechBtn.innerText = "Pause the speech";
+            }
+            else
+            {
+                synth.pause();
+                isSpeaking = true;
+                speechBtn.innerText = "Resume a speech";
+            }
+           setInterval(() =>{
+            if(!synth.speaking && !isSpeaking)
+            {
+                isSpeaking =true;
+                speechBtn.innerText = "Convert to speech";
+            }
+           });
+
+        }
+        else
+        {
+            speechBtn.innerText ="Convert To speech";
+        }
+    }
+
+
+});
+</script>
+
+
+
+
+<!-- css -->
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(119, 154, 235);
+
+
+}
+
+.wraper{
+    align-items: center;
+  
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+    background: #fff;
+}
+
+.wraper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* #area{
+   
+    height: 250px;
+    padding: 8px 100px 50px 50px;
+    margin-bottom: 2rem;
+} */
+
+.select{
+   
+    padding-right: 8rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.9rem;
+    font-size: .8rem;
+    border-radius: 7px;
+    background: rgb(238, 227, 227);
+
+}
+   
+.wraper textarea{
+    height: 200px;
+    resize: none;
+   width: 100%;
+   padding-top: 15px;
+   padding-bottom: 8px;
+   padding-left: 15px;
+   padding-right: 8px; 
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+   border-radius: 7px;
+   background: rgb(247, 242, 242);
+}
+
+.font-size{
+    
+    font-size: 1.2rem;
+}
+
+#btn{
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    background: rgb(238, 227, 227);
+}
+
+#select-btn{
+    /* background-color: rebeccapurple; */
+}
+
+#select{
+    /* background-color: red;
+    margin-right: 700rem; */
+   
+    /* margin-left: 30rem; */
+}
+</style>
+</body>
+</html>
+
+
+<!-- akshay is very good boy he is always ready to learn new things . and he belongs from maharashtra and he like to play cricket-->
